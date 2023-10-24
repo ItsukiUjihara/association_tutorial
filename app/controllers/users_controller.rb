@@ -8,4 +8,10 @@ class UsersController < ApplicationController
     @tweets = @user.tweets
     @favorite_tweets = @user.favorite_tweets 
   end
+
+  def set_user
+    @user = User.find(params[:id])
+  end
 end
+  
+ 

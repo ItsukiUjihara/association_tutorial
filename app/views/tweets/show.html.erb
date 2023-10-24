@@ -3,4 +3,6 @@
 
 
 <p><span>email: </span><%= @user.email %></p>
-<p><span>ツイート内容: </span><%= @tweet.body %></p>
+<p><span>ツイート内容:</span><%= @tweet.body %></p>
+<p><%= button_to "編集", edit_tweet_path(tweet.id) %></p> 
+<p><%= button_to "削除",tweet_path(tweet.id) %></p>
